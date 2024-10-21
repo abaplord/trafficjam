@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+#board {
+	box-sizing: content-box;
+	position: relative;
+	font-size: 100px;
+	width: 6em;
+	height: 6em;
+	background-color: #999;
+	border: 6px solid black;
+}
+
+.available {
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	border: 3px solid white;
+	z-index: 100;
+}
+
+#exit {
+	position: absolute;
+	right: calc(6em+6px);
+	top: 3em;
+	border-right: 6px solid #999;
+	z-index: 1;
+}
+
+#red, .car, .truck {
+	position: absolute;
+	background-color: white;
+	border: 3px solid transparent;
+	z-index: 100;
+	transition: left 0.4s, top 0.4s;
+}
+
+#red.selected, .car.selected, .truck.selected {
+	border: 3px solid yellow;
+}
+
+#red, .car.horiz {
+	width: 2em;
+	height: 1em;
+}
+
+.car.vert {
+	width: 1em;
+	height: 2em;
+}
+
+.truck.horiz {
+	width: 3em;
+	height: 1em;
+}
+
+.truck.vert {
+	width: 1em;
+	height: 3em;
+}
+
+#red {
+	background-color: red;
+}
+
+/* need explicit class on #red for byootiful exit transition to work
+  (#board.winner #red doesn't work)
+*/
+#red.free {
+	left: calc(5em+100px) !important;
+}
+
+#pc1 {
+	background-color: yellow;
+}
+#pc2 {
+	background-color: green;
+}
+#pc3 {
+	background-color: blue;
+}
