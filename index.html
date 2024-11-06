@@ -6,22 +6,28 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/available_spaces.css">
-	<script src="src/logic.js"></script>
-	<script src="src/ui.js"></script>
-	<script src="src/main.js"></script>
-	<script src="src/solver.js"></script>
+	<script src="scripts/logic.js"></script>
+	<script src="scripts/ui.js"></script>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/solver.js"></script>
 </head>
 <body>
 	<header>
-		<div><span id=timer>0</span>s</div>
-		<div><span id=numMoves>0</span> Moves</div>
-		<!--<div>Score: <span id=score>0</span></div> -->
+		<div id="scores">
+			<div id="div-timer"><span id=timer>0</span>s (tempo)</div>
+			<div id="div-moves"><span id=numMoves>0</span> Movimentações</div>
+		</div>
 	</header>
-	<main id="board">
-		<div id="exit"></div>
-	</main>
-	<div>
-	<button id="solve">Solve!</button>
-	</div>
+	<section id="content">
+		<main id="board">
+				<div id="exit"></div>
+			</main>
+			<div>
+		</div>
+	</section>
+	<button class="button-difficulty" data-difficulty="easy">easy</button>
+	<button class="button-difficulty" data-difficulty="medium">medium</button>
+	<button class="button-difficulty" data-difficulty="hard">hard</button>
+
 </body>
 </html>

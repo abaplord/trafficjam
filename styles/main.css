@@ -2,14 +2,20 @@
 	box-sizing: border-box;
 }
 
+body{
+	text-align: center;
+}
+
 #board {
+	background-image: url("./img/board.png");
+	background-size: 100%;
 	box-sizing: content-box;
 	position: relative;
 	font-size: 100px;
 	width: 6em;
 	height: 6em;
-	background-color: #999;
-	border: 6px solid black;
+	border: 0.8vmin solid #023859;
+	border-radius: 1vmin;
 }
 
 .available {
@@ -60,23 +66,87 @@
 	height: 3em;
 }
 
-#red {
-	background-color: red;
+#red{
+	background-image: url("/styles/img/red.png");
+	background-size: 101.5%;
+	background-color: initial;
 }
 
-/* need explicit class on #red for byootiful exit transition to work
-  (#board.winner #red doesn't work)
-*/
 #red.free {
 	left: calc(5em+100px) !important;
 }
 
-#pc1 {
-	background-color: yellow;
+
+
+.yellow-horiz{
+	background-image: url("/styles/img/yellow.png");
 }
-#pc2 {
-	background-color: green;
+
+.yellow-vert{
+	background-image: url("/styles/img/yellow_vert.png");
 }
-#pc3 {
-	background-color: blue;
+
+.green-horiz{
+	background-image: url("/styles/img/green.png");
+
+}
+
+.purple-horiz{
+	background-image: url("/styles/img/purple.png");
+}
+
+.green-vert{
+	background-image: url("/styles/img/green_vert.png");
+}
+.purple-vert{
+	background-image: url("/styles/img/purple_vert.png");
+}
+
+.car{
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: initial;
+}
+
+.truck{
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: initial;
+}
+
+#content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	#scores{
+		display: flex;
+		justify-content: center;
+		width: 64vmin;
+		
+		div{
+			width: 100%;
+			padding: 2vmin;
+			border: #023859 0.8vmin solid; 
+			border-radius: 1vmin;		
+			margin-bottom: 1vmin;
+
+
+		}
+		
+	}
+}
+
+button{
+	padding: 1vmin;
+	margin: 1vmin;
+	background-color: #023859;
+	color: white;
+	border-style: none;
+	border-radius: 0.5vmin;
 }

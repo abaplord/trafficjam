@@ -1,0 +1,23 @@
+{
+    "easy": {
+        "1": {
+            "red": { "col": 2, "row": 3, "orient": "horiz", "size": 2, "color": "red"},
+            "pc1": { "col": 2, "row": 1, "orient": "horiz", "size": 2, "color": "yellow"},
+            "pc2": { "col": 3, "row": 4, "orient": "vert", "size": 2, "color": "yellow"},
+            "pc3": { "col": 6, "row": 5, "orient": "vert", "size": 2, "color": "yellow"},
+            "pc4": { "col": 1, "row": 4, "orient": "vert", "size": 3, "color": "purple"},
+            "pc5": { "col": 4, "row": 1, "orient": "vert", "size": 3, "color": "purple"},
+            "pc6": { "col": 4, "row": 4, "orient": "horiz", "size": 3, "color": "purple"},
+            "pc7": { "col": 3, "row": 6, "orient": "horiz", "size": 3, "color": "purple"}
+
+
+
+
+
+
+
+        }
+    },
+    "medium": {
+    }
+}
